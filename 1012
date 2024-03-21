@@ -14,7 +14,7 @@ public class Main {
  
  
         double a,b,c
-        double areaTriangle, areaCircle;
+        double areaTriangle,areaCircle,trapeziumArea,squareArea,rectangleArea;
         double pi = 3.14159;
         Scanner scan = new Scanner(System.in);
         a = scan.nextDouble();
@@ -25,11 +25,23 @@ public class Main {
         
         //rectangle triangle Area
         areaTriangle = (a * c) / 2;
-        System.out.println("TRIANGULO: " + df.format(area));
+        System.out.println("TRIANGULO: " + df.format(areaTriangle));
         
         //circle Area
-        areaCircle
- 
+        areaCircle = pi * Math.pow(c,2);
+        System.out.println("CIRCULO: " + df.format(areaCircle));
+        
+        //trapezium Area
+        trapeziumArea = ((a + b) * C) / 2; 
+        System.out.println("TRAPEZIO: " + df.format(trapeziumArea));
+        
+        //square Area
+        squareArea = Math.pow(b,2); 
+        System.out.println("QUADRADO: " + df.format(squareArea));
+        
+        //rectangle Area
+        rectangleArea = (a * b); 
+        System.out.println("RETANGULO: " + df.format(rectangleArea));
     }
  
 }
