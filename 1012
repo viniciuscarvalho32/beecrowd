@@ -13,11 +13,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
  
  
-        double a,b,c
+        double a,b,c;
         double areaTriangle,areaCircle,trapeziumArea,squareArea,rectangleArea;
         double pi = 3.14159;
         Scanner scan = new Scanner(System.in);
         a = scan.nextDouble();
+        b = scan.nextDouble();
         c = scan.nextDouble();
         
         DecimalFormat df = new DecimalFormat("0.000");
@@ -32,7 +33,7 @@ public class Main {
         System.out.println("CIRCULO: " + df.format(areaCircle));
         
         //trapezium Area
-        trapeziumArea = ((a + b) * C) / 2; 
+        trapeziumArea = ((a + b) * c) / 2; 
         System.out.println("TRAPEZIO: " + df.format(trapeziumArea));
         
         //square Area
