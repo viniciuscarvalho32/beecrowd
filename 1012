@@ -1,0 +1,35 @@
+import java.io.IOException;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+ 
+/**
+ * IMPORTANT: 
+ *      O nome da classe deve ser "Main" para que a sua solução execute
+ *      Class name must be "Main" for your solution to execute
+ *      El nombre de la clase debe ser "Main" para que su solución ejecutar
+ */
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+ 
+        double a,b,c
+        double areaTriangle, areaCircle;
+        double pi = 3.14159;
+        Scanner scan = new Scanner(System.in);
+        a = scan.nextDouble();
+        c = scan.nextDouble();
+        
+        DecimalFormat df = new DecimalFormat("0.000");
+        df.setMaximumFractionDigits(3);
+        
+        //rectangle triangle Area
+        areaTriangle = (a * c) / 2;
+        System.out.println("TRIANGULO: " + df.format(area));
+        
+        //circle Area
+        areaCircle
+ 
+    }
+ 
+}
