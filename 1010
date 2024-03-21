@@ -1,0 +1,60 @@
+import java.io.IOException;
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        double sumTotalValue;
+        Scanner scan = new Scanner(System.in);
+        
+        Product prod1 = new Product();
+        prod1.setCode(scan.nextInt());
+        prod1.setUnitNumber(scan.nextInt());
+        prod1.setPrice(scan.nextDouble());
+        
+        Product prod2 = new Product();
+        prod2.setCode(scan.nextInt());
+        prod2.setUnitNumber(scan.nextInt());
+        prod2.setPrice(scan.nextDouble());
+        
+        DecimalFormat df = new DecimalFormat("0.00");
+        df.setMaximumFractionDigits(2);
+        
+        sumTotalValue = prod1.calcValuePaid() + prod2.calcValuePaid(); 
+    
+        System.out.println("VALOR A PAGAR: R$ " + df.format(sumTotalValue));    
+        
+    }
+ 
+}
+class Product {
+    
+    private int code,unitNumber;
+    private double price;
+    
+    int getCode() {
+        return this.code;
+    }
+    void setCode(int code) {
+        this.code = code;
+    }
+    int getUnitNumber() {
+        return this.unitNumber;
+    }
+    void setUnitNumber(int unit) {
+        this.unitNumber = unit;
+    }
+    double getPrice() {
+        return this.price;
+    }
+    void setPrice(double price) {
+        this.price = price;
+    }
+    
+    double calcValuePaid() {
+        return this.unitNumber * this.price; 
+    }
+
+}
